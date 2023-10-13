@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <link rel="shortcut icon" href="assets/icon.svg" type="image/x-icon">
+  </head>
+  <body>
+    <h1>Formulário</h1>
+    <hr />
+    <form id="formulario">
+      <fieldset>
+        <legend>Informações Básicas</legend>
+        <label for="nome">Nome Completo:</label>
+        <input type="text" name="nome" id="nome" />
+
+        <label for="email">Email:</label>
+        <input type="text" name="email" id="email" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Telefone</legend>
+
+        <label for="telefone">Tell: </label>
+        <input type="text" name="telefone" id="telefone" />
+
+        <div id="tiposTelefone">
+          <h3>Tipo:</h3>
+
+          <label for="opcao1">Casa</label>
+          <input
+            type="radio"
+            name="tipoTell"
+            value="Casa"
+            id="opcao1"
+            checked
+          />
+
+          <label for="opcao2">Trabalho</label>
+          <input type="radio" name="tipoTell" value="Trabalho" id="opcao2" />
+
+          <label for="opcao3">Celular</label>
+          <input type="radio" name="tipoTell" value="Celular" id="opcao3" />
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Endereço</legend>
+
+        <label for="logradouro">Logradouro:</label>
+        <input type="text" name="logradouro" id="logradouro" />
+
+        <label for="cidade">Cidade:</label>
+        <input type="text" name="cidade" id="cidade" />
+        <br />
+        <br />
+
+        <label for="estado">Estado:</label>
+        <input type="text" name="estado" id="estado" />
+
+        <label for="cep">CEP:</label>
+        <input type="text" name="cep" id="cep" />
+
+        <label for="pais">País:</label>
+        <input type="text" name="pais" id="pais" />
+      </fieldset>
+      <button>Salvar Informações</button>
+    </form>
+  </body>
+</html>
